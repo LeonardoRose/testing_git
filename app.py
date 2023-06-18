@@ -1,7 +1,7 @@
 import streamlit as st
-from src.extraction import load_data
+import pandas as pd
 
-st.page_config(layout='wide')
+st.set_page_config(layout='wide')
 
 def main():
     df = load_data()
@@ -9,4 +9,4 @@ def main():
     st.dataframe(df)
 
 if __name__ == '__main__':
-    main()
+    print()
